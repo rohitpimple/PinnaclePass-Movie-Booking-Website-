@@ -1,0 +1,145 @@
+.seating {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.seat-container {
+  display: flex;
+  justify-content: center;
+}
+
+.seat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+}
+
+.seat {
+  background-color: #ff7f50;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+.seat.selected {
+  background-color: rgb(28, 185, 120);
+}
+.seat.reserved{
+  background-color: grey;
+}
+.selected-seats {
+  margin-top: 20px;
+}
+.seat-button {
+  display: none;
+}
+.timings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.show_heading{
+  padding-left: 15px;
+}
+
+.dates {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.dates-item {
+  width: 50px;
+  height: 40px;
+  background: rgb(233, 233, 233);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 2mm;
+  cursor: pointer;
+}
+.day {
+  font-size: 12px;
+}
+.date{
+  font-size: 18px;
+}
+.month{
+  font-size: 12px;
+}
+.times {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.time {
+  font-size: 14px;
+  width: fit-content;
+  padding: 7px 14px;
+  background: rgb(233, 233, 233);
+  border-radius: 2mm;
+  cursor: pointer;
+  margin: 0;
+  margin-top: 25px;
+  margin-right: 60px;
+}
+.timings input:checked + label {
+  background: #ff7f6d;
+  color: white;
+}
+
+.seats-screen {
+  position: relative;
+}
+
+.seat-screen-light,
+.seat-screen-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.seat-screen-light {
+  height: 15px;
+  width: 30%;
+  margin-left: 35%;
+  background: linear-gradient(
+    to top,
+    rgb(229, 228, 228),
+    rgba(128, 128, 128, 0.313)
+  );
+}
+
+.seat-screen-div {
+  height: 5px;
+  width: 30%;
+  margin-left: 35%;
+  background-color: grey;
+  margin-top: 15px;
+}

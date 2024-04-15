@@ -1,0 +1,119 @@
+.logo span {
+  color: red;
+  font-size: 2rem;
+}
+.logo {
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #000;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Logout-div{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-search {
+  width: 40%;
+  height: 36px;
+  position: relative;
+  display: flex;
+  margin: 5px 10px;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.nav-searchTerm {
+  width: calc(100% - 40px);
+  border: 2px solid rgb(162, 162, 162);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  margin: 0;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.nav-searchButton {
+  width: 40px;
+  height: 34px;
+  border: 2px solid rgb(162, 162, 162);
+  background: white;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0;
+}
+.wrap {
+  display: absolute;
+}
+
+.Drawer .fa-bars {
+  font-size: 24px;
+  margin: 5px 10px;
+  display: none;
+}
+
+.Options-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 4px 0;
+  background-color: #dddddd;
+  margin-bottom: 8px;
+}
+
+.Options-menu > * {
+  padding: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+.Options-menu > a:hover {
+  color: black;
+}
+
+
+
+.logout-button,
+.LoginButton {
+  background: linear-gradient(to right, #ff7f50, #ff4c29);
+  background-color: #ff7f50;
+  color: #333;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+}
+
+.logout-button:hover,
+.LoginButton:hover {
+  background: linear-gradient(to right, #ff4c29, #ff7f50);
+}
+
+
